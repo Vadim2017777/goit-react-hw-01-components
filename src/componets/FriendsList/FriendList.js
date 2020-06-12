@@ -1,23 +1,20 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 
-import styles from './FreindsList.module.css';
+import s from './FreindsList.module.css';
 
 const FreindList = ({ friends }) => (
-  <ul className={styles.list}>
+  <ul className={s.list}>
     {friends.map(freind => (
-      <li key={freind.id} className={styles.item}>
-        <span
-          className={freind.isOnline ? styles.active : styles.disabled}
-        ></span>
+      <li key={freind.id} className={s.item}>
+        <span className={freind.isOnline ? s.active : s.disabled}></span>
         <img
-          className={styles.avatar}
+          className={s.avatar}
           src={freind.avatar}
           alt={freind.name}
           width="48"
         />
-        <p className={styles.name}>{freind.name}</p>
+        <p className={s.name}>{freind.name}</p>
       </li>
     ))}
   </ul>
