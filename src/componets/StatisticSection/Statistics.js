@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import s from './Statistics.module.css';
-
 import color from '../../helpers/color.js';
+
+import s from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => (
   <section className={s.statistics}>

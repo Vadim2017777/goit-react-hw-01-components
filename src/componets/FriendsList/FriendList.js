@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import s from './FreindsList.module.css';
 
+const widthImg = '48';
+
 const FreindList = ({ friends }) => (
   <ul className={s.list}>
     {friends.map(freind => (
@@ -12,7 +14,7 @@ const FreindList = ({ friends }) => (
           className={s.avatar}
           src={freind.avatar}
           alt={freind.name}
-          width="48"
+          width={widthImg}
         />
         <p className={s.name}>{freind.name}</p>
       </li>
